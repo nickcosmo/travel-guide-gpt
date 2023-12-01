@@ -1,0 +1,134 @@
+<template>
+  <div class="row justify-center">
+    <TheItinerary :itinerary="itinerary" />
+  </div>
+</template>
+
+<script setup lang="ts">
+// const itineraryData = useItineraryData().itineraryData.value;
+// console.log('itineraryData :>> ', itineraryData);
+// if (!itineraryData || !itineraryData.choices) {
+//   await navigateTo({
+//     path: '/',
+//   });
+// }
+
+// const itinerary = itineraryData.choices[0].text;
+const itinerary = `
+{
+  "city_location": {
+    "lat": 39.739236,
+    "lng": -104.990251
+  },
+  "itinerary": [
+    {
+      "date": "2023/06/13",
+      "breakfast": {
+        "name": "Snooze an A.M. Eatery",
+        "link": "https://snoozeeatery.com/",
+        "position": {
+          "lat": 39.716977,
+          "lng": -104.958686
+        }
+      },
+      "lunch": {
+        "name": "The Source",
+        "link": "https://www.thesourcedenver.com/",
+        "position": {
+          "lat": 39.757514,
+          "lng": -105.00229
+        }
+      },
+      "dinner": {
+        "name": "Hop Alley",
+        "link": "https://hopalleydenver.com/",
+        "position": {
+          "lat": 39.749086,
+          "lng": -105.001414
+        }
+      },
+      "attraction1": {
+        "name": "Denver Botanic Gardens",
+        "link": "https://www.botanicgardens.org/",
+        "bookingRequired": false,
+        "position": {
+          "lat": 39.740392,
+          "lng": -104.966013
+        }
+      },
+      "attraction2": {
+        "name": "Denver Zoo",
+        "link": "https://denverzoo.org/",
+        "bookingRequired": true,
+        "position": {
+          "lat": 39.757593,
+          "lng": -104.949974
+        }
+      },
+      "attraction3": {
+        "name": "Colorado State Capitol",
+        "link": "https://www.colorado.gov/pacific/capitol",
+        "bookingRequired": false,
+        "position": {
+          "lat": 39.739163,
+          "lng": -104.987744
+        }
+      }
+    },
+    {
+      "date": "2023/06/14",
+      "breakfast": {
+        "name": "The Corner Beet",
+        "link": "https://www.thecornerbeet.com/",
+        "position": {
+          "lat": 39.758829,
+          "lng": -104.994059
+        }
+      },
+      "lunch": {
+        "name": "Denver Biscuit Co.",
+        "link": "https://denbisco.com/",
+        "position": {
+          "lat": 39.752279,
+          "lng": -104.99117
+        }
+      },
+      "dinner": {
+        "name": "Root Down",
+        "link": "https://www.rootdowndenver.com/",
+        "position": {
+          "lat": 39.71267,
+          "lng": -105.006722
+        }
+      },
+      "attraction1": {
+        "name": "Coors Field",
+        "link": "https://www.mlb.com/rockies/ballpark",
+        "bookingRequired": true,
+        "position": {
+          "lat": 39.755926,
+          "lng": -105.000814
+        }
+      },
+      "attraction2": {
+        "name": "Denver Museum of Nature & Science",
+        "link": "https://www.dmns.org/",
+        "bookingRequired": true,
+        "position": {
+          "lat": 39.740061,
+          "lng": -104.956776
+        }
+      },
+      "attraction3": {
+        "name": "Denver Art Museum",
+        "link": "https://denverartmuseum.org/",
+        "bookingRequired": true,
+        "position": {
+          "lat": 39.742815,
+          "lng": -104.9986
+        }
+      }
+    }
+  ]
+}`;
+</script>
